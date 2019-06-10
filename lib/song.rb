@@ -41,6 +41,6 @@ class Song
   end
 
   def self.alphabetical
-    @@all.sort_bb(&:name)
+    @@all.sort_by(&:name)
   end
 end
