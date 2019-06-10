@@ -45,7 +45,7 @@ class Song
   end
 
   def self.new_from_filename(name) #split the name on the -, remove the mp3
-    new_name = name.slice! "mp3
+    new_name = name.slice! "mp3"
     split_name = new_name.split('-')
     artist_name = split_name[0].to_s
     song_name = split_name[1].to_s
