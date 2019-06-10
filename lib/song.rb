@@ -44,7 +44,8 @@ class Song
     @@all.sort_by(&:name)
   end
 
-  def self.new_from_filename(name)
+  def self.new_from_filename(name) #split the name on the -, remove the mp3
+    new_name = name.slice! "mp3"
 
   end
 
