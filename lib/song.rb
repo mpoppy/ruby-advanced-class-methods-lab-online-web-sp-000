@@ -48,7 +48,8 @@ class Song
     new_name = name.slice! "mp3"
     split_name = new_name.split('-')
     artist_name = split_name[0].to_s
-    last_name = split_name[1].to_s
+    song_name = split_name[1].to_s
+    self.create_by_name(song_name)
   end
 
 
