@@ -51,6 +51,7 @@ class Song
     song_name = split_name[1].to_s
     song = self.create_by_name(song_name)
     song.artist_name = artist_name
+    song
   end
 
 
