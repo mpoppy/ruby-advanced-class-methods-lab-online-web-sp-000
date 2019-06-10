@@ -41,6 +41,6 @@ class Song
   end
 
   def self.alphabetical
-    @@all.sort_by! { |object, name| name.downcase }
+    @@all.sort_by! { |object, name| name.group.name.downcase }
   end
 end
